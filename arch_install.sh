@@ -81,7 +81,7 @@ mkdir -p /mnt/home
 mount "$HOME_PART" /mnt/home
 
 echo "Установка базовой системы и пакетов..."
-pacstrap /mnt base linux linux-firmware base-devel nano grub networkmanager hyprland
+pacstrap /mnt base linux linux-firmware base-devel nano grub efibootmgr networkmanager hyprland kitty swww firefox
 
 echo "Генерация fstab..."
 genfstab -U /mnt >> /mnt/etc/fstab
